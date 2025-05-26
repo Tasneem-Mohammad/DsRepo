@@ -1,1 +1,9 @@
+example [ 2 1 5 4 3 0 0 ]
+3 steps to do this:
+step1 : find the longer prefix match(iterate from back and check for the break point i.e arr[i] < arr[i+1] => 1 < 5 , store the index = 1;
+step2: find the first element greater that the index value i.e arr[i] >= arr[index] i.e 3 here and swap them to get [ 2 3 5 4 1 0 0 ]
+step3: since they are in increasing orders reverse(arr.begin()+index+1 , arr.end())
+output: [ 2 3 0 0 1 4 5] 
 
+
+code:
